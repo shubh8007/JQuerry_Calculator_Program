@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <script src="./jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          var n1 = parseInt($("#num1").val());
+          var n2 = parseInt($("#num2").val());
+          var add = n1 + n2;
+
+          $("#res").val(add);
+          $("#mydiv").html(add);
+        });
+        $("#btn1").click(function () {
+          var n1 = parseInt($("#num1").val());
+          var n2 = parseInt($("#num2").val());
+          var sub = n1 - n2;
+          $("#res").val(sub);
+          $("#mydiv").html(sub);
+        });
+        $("#btn2").click(function () {
+          var n1 = parseInt($("#num1").val());
+          var n2 = parseInt($("#num2").val());
+          var mul = n1 * n2;
+          $("#res").val(mul);
+          $("#mydiv").html(mul);
+        });
+        $("#btn3").click(function () {
+          var n1 = parseInt($("#num1").val());
+          var n2 = parseInt($("#num2").val());
+          var div = n1 / n2;
+          $("#res").val(div);
+          $("#mydiv").html(div);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form>
+      Number 1: <input type="text" name="num1" id="num1" /><br />
+      Number 2: <input type="text" name="num2" id="num2" /><br />
+      Result: <input type="text" id="res" name="res" /><br />
+    </form>
+    <button type="text" id="btn" value="btn">Addition</button>
+    <button type="text" id="btn1" value="btn">Substraction</button>
+    <button type="text" id="btn2" value="btn">Multiplication</button>
+    <button type="text" id="btn3" value="btn">Division</button>
+
+    <div id="mydiv"></div>
+  </body>
+</html>
